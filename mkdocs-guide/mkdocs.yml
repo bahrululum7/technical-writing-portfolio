@@ -1,0 +1,29 @@
+site_name: Bahrul Docs
+
+theme: 
+  name: material
+  logo: images/b.png
+  favicon: images/bbb.png 
+  features: 
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+    - toc.follow
+
+plugins: 
+  - search
+  - awesome-pages
+  
+nav: 
+  - Home: index.md
+  - About: about.md 
+  - Install Tutorial : install/windows.md
+  - Usage: 
+    - Intro: usage/intro.md 
+    - Advanced: usage/advanced.md 
+
+markdown_extensions:
+  - admonition
+  - pymdownx.tabbed:
+      alternate_style: true
