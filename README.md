@@ -1,36 +1,53 @@
 # 📚 Technical Writing Portfolio
 
-Welcome to my portfolio! I'm an aspiring Technical Writer passionate about creating clear, user-friendly documentation for technical tools, software, and workflows.
+Welcome to my portfolio! I’m an aspiring **Technical Writer** focused on creating clear, accessible, and user-friendly documentation for technical tools, workflows, and software.
+
+This repository is a showcase of my learning journey using the **Docs-as-Code** approach, with tools like **Markdown**, **MkDocs**, and **GitHub**.
+
+---
 
 ## ✨ About Me
 
-I'm currently learning technical writing, Markdown, MkDocs, Git, and GitHub, with a strong focus on documentation-as-code practices. This repository is a collection of my writing samples and documentation projects.
+I am currently learning and practicing technical writing using:
 
-## 🧰 Tools & Skills in This Portfolio
+- ✍️ Markdown
+- 🔧 MkDocs (Material for MkDocs theme)
+- 🌿 Git & GitHub
+- 🧱 Docs-as-Code principles
+- 📘 English-language documentation
+- 🔜 REST API Documentation (Coming soon!)
 
-- Markdown
-- Git & GitHub
-- MkDocs (Material Theme)
-- Documentation-as-Code
-- API Documentation (coming soon)
-- English Technical Writing
+Through this portfolio, I aim to demonstrate how I structure documentation, organize content, and communicate technical concepts effectively.
+
+---
 
 ## 📁 Projects
 
-### 1. MkDocs Beginner Guide
-A step-by-step guide for beginners to build documentation using MkDocs.
+### 1️⃣ MkDocs Beginner Guide  
+A step-by-step tutorial for beginners on how to create documentation websites using MkDocs.
 
-- 📂 Folder: `mkdocs-guide`
-- 📄 Includes: `index.md`, `mkdocs.yml`, and sample pages
-- 🛠️ Topics: Installation, configuration, customization
+- 📂 Folder: `mkdocs-guide`  
+- 📄 Contents: `index.md`, `mkdocs.yml`, and sample pages  
+- 🛠️ Topics covered: Installation, configuration, customization, and local deployment  
 
-### 2. [Coming Soon] REST API Documentation Sample
-A sample documentation for a fictional API, including reference and usage guide.
+🔗 **View the site**: [Click here to visit the live documentation](https://bahrululum7.github.io/technical-writing-portfolio/)
 
-- 📂 Folder: `api-docs`
-- 📄 Includes: `overview.md`, `endpoints.md`, `auth.md`
+---
+
+### 2️⃣ [Coming Soon] REST API Documentation Sample  
+Sample reference-style documentation for a fictional REST API.
+
+- 📂 Folder: `api-docs`  
+- 📄 Contents: `overview.md`, `endpoints.md`, `auth.md`  
+- 🧭 Topics: Endpoint structure, authentication, usage examples
+
+---
 
 ## 🌐 Contact
 
-- 📧 Email: [youremail@example.com]
-- 💼 LinkedIn: [linkedin.com/in/yourname]
+- 📧 Email: **bahrul070302@gmail.com**   
+- 🐙 GitHub: [github.com/bahrululum7](https://github.com/bahrululum7)
+
+---
+
+> *This portfolio is continuously evolving as I learn and grow as a technical writer.*
