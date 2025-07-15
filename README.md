@@ -1,59 +1,64 @@
+```markdown
 # 📚 Technical Writing Portfolio
 
-Welcome to my portfolio! I’m an aspiring **Technical Writer** focused on creating clear, accessible, and user-friendly documentation for technical tools, workflows, and software.
+Welcome to my portfolio! I’m an aspiring **Technical Writer** dedicated to crafting clear, user-focused, and developer-friendly documentation for modern software, APIs, and technical workflows.
 
-This repository is a showcase of my learning journey using the **Docs-as-Code** approach, with tools like **Markdown**, **MkDocs**, and **GitHub**.
+This repository highlights my hands-on learning journey using the **Docs-as-Code** approach with tools like **Markdown**, **MkDocs**, and **GitHub**.
 
 ---
 
 ## ✨ About Me
 
-I am currently learning and practicing technical writing using:
+I am currently building my skills in technical writing through real-world examples and self-driven projects, using:
 
-- ✍️ Markdown
-- 🔧 MkDocs (Material for MkDocs theme)
-- 🌿 Git & GitHub
-- 🧱 Docs-as-Code principles
-- 📘 English-language documentation
-- 📡 REST API Documentation
+- ✍️ Markdown for structured content
+- 🔧 MkDocs (Material for MkDocs theme) for site generation
+- 🌿 Git & GitHub for version control
+- 🧱 Docs-as-Code workflows
+- 📘 English-language documentation writing
+- 📡 REST API Documentation (with Postman & dummy APIs)
 
-Through this portfolio, I aim to demonstrate how I structure documentation, organize content, and communicate technical concepts effectively.
+This portfolio demonstrates how I structure technical documentation, explain API behavior, and organize content with clarity and consistency.
 
 ---
 
 ## 📁 Projects
 
 ### 1️⃣ MkDocs Beginner Guide  
-A step-by-step tutorial for beginners on how to create documentation websites using MkDocs.
+A step-by-step guide for beginners on how to create and publish documentation websites using MkDocs.
 
 - 📂 Folder: `mkdocs-guide`  
-- 📄 Contents: `index.md`, `mkdocs.yml`, and sample pages  
-- 🛠️ Topics covered: Installation, configuration, customization, and local deployment  
+- 📄 Contents: `index.md`, `mkdocs.yml`, and sample topic pages  
+- 🛠️ Topics covered: Installation, configuration, navigation, and local deployment  
 
-🔗 **View the site**: [Click here to visit the live documentation](https://bahrululum7.github.io/technical-writing-portfolio/)
+🔗 **Live site**: [Click here to visit the documentation](https://bahrululum7.github.io/technical-writing-portfolio/)
 
 ---
 
 ### 2️⃣ REST API Documentation Sample  
-Reference-style documentation for a fictional REST API called **TaskTrack**.
+Professional-style documentation for a fictional REST API called **TaskTrack**, based on testing via Postman and Reqres API.
 
 - 📂 Folder: `api-docs`  
 - 📄 Contents:
-  - [`users.md`](./api-docs/users.md) → Get all users  
-  - [`create-user.md`](./api-docs/create-user.md) → Create new user  
-  - [`update-user.md`](./api-docs/update-user.md) → Update existing user
-  - [`delete-user.md`](./api-docs/delete-user.md) → Delete user by ID
+  - [`users.md`](./api-docs/users.md) – Get all users  
+  - [`create-user.md`](./api-docs/create-user.md) – Create new user  
+  - [`update-user.md`](./api-docs/update-user.md) – Update user by ID  
+  - [`delete-user.md`](./api-docs/delete-user.md) – Delete user  
+  - [`products.md`](./api-docs/products.md) – View product list  
+  - [`create-product.md`](./api-docs/create-product.md) – Add a new product  
+  - [`login.md`](./api-docs/login.md) – Authenticate user login  
+  - [`glossary.md`](./api-docs/glossary.md) – Common API and docs terms
 
-
-- 🧭 Topics: Endpoint usage, request/response examples, authentication
+- 🧭 Topics: REST methods (GET, POST, PUT, DELETE), request/response structures, status codes, headers, tokens
 
 ---
 
 ## 🌐 Contact
 
-- 📧 Email: **bahrul070302@gmail.com**   
+- 📧 Email: **bahrul070302@gmail.com**  
 - 🐙 GitHub: [github.com/bahrululum7](https://github.com/bahrululum7)
 
 ---
 
-> *This portfolio is continuously evolving as I learn and grow as a technical writer.*
+> _This portfolio is actively maintained and updated as I continue to grow as a Technical Writer._
+```
