@@ -1,41 +1,55 @@
-# Users API
-
-## DELETE /api/users/:id
+# Delete User
 
 Delete an existing user by user ID.
 
 ---
 
-### 🔹 HTTP Method & Endpoint
+## Endpoint
 
-```
-DELETE /api/users/:id
-```
+**DELETE** `/api/users/:id`
 
-- `:id` → Path parameter untuk menentukan user mana yang ingin dihapus.
+- `:id` → Path parameter for the unique user ID to be deleted.
 
 ---
 
-### 🔹 Example Request
+## Headers
+
+| Key            | Value               |
+|----------------|---------------------|
+| Authorization  | Bearer YOUR_API_KEY |
+
+---
+
+## Example Request
 
 ```http
-DELETE /api/users/101 HTTP/1.1  
-Host: api.tasktrack.com  
-Authorization: Bearer YOUR_API_KEY
+DELETE /api/users/101 HTTP/1.1
+Host: api.tasktrack.com
+Authorization: Bearer QpwL5tke4Pnpja7X4
 ```
 
 ---
 
-### 🔹 Response
+## Success Response (204 No Content)
 
-**Status:** `204 No Content`
-
-(no response body)
+- The user was successfully deleted.
+- No content will be returned in the response body.
 
 ---
 
-### 📘 Notes
+## Error Response (404 Not Found)
+
+```json
+{
+  "error": "User not found"
+}
+```
+
+---
+
+## Notes
 
 - Requires a valid authentication token.
-- If the user does not exist, the server should return `404 Not Found`.
-- `204 No Content` means the operation succeeded but there’s no data to return.
+- Returns `204 No Content` on successful deletion.
+- If the user ID does not exist, returns `404 Not Found`.
+```
