@@ -15,7 +15,7 @@ I am currently learning and practicing technical writing using:
 - 🌿 Git & GitHub
 - 🧱 Docs-as-Code principles
 - 📘 English-language documentation
-- 🔜 REST API Documentation (Coming soon!)
+- 📡 REST API Documentation
 
 Through this portfolio, I aim to demonstrate how I structure documentation, organize content, and communicate technical concepts effectively.
 
@@ -34,12 +34,14 @@ A step-by-step tutorial for beginners on how to create documentation websites us
 
 ---
 
-### 2️⃣ [Coming Soon] REST API Documentation Sample  
-Sample reference-style documentation for a fictional REST API.
+### 2️⃣ REST API Documentation Sample  
+Reference-style documentation for a fictional REST API called **TaskTrack**.
 
 - 📂 Folder: `api-docs`  
-- 📄 Contents: `overview.md`, `endpoints.md`, `auth.md`  
-- 🧭 Topics: Endpoint structure, authentication, usage examples
+- 📄 Contents:
+  - [`users.md`](./api-docs/users.md) → Get all users  
+  - [`create-user.md`](./api-docs/create-user.md) → Create new user  
+- 🧭 Topics: Endpoint usage, request/response examples, authentication
 
 ---
 
