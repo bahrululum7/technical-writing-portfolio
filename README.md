@@ -1,4 +1,3 @@
-```markdown
 # 📚 Technical Writing Portfolio
 
 Welcome to my portfolio! I’m an aspiring **Technical Writer** dedicated to crafting clear, user-focused, and developer-friendly documentation for modern software, APIs, and technical workflows.
@@ -11,12 +10,12 @@ This repository highlights my hands-on learning journey using the **Docs-as-Code
 
 I am currently building my skills in technical writing through real-world examples and self-driven projects, using:
 
-- ✍️ Markdown for structured content
-- 🔧 MkDocs (Material for MkDocs theme) for site generation
-- 🌿 Git & GitHub for version control
-- 🧱 Docs-as-Code workflows
-- 📘 English-language documentation writing
-- 📡 REST API Documentation (with Postman & dummy APIs)
+- ✍️ Markdown for structured content  
+- 🔧 MkDocs (Material for MkDocs theme) for site generation  
+- 🌿 Git & GitHub for version control  
+- 🧱 Docs-as-Code workflows  
+- 📘 English-language documentation writing  
+- 📡 REST API Documentation (with Postman & dummy APIs)  
 
 This portfolio demonstrates how I structure technical documentation, explain API behavior, and organize content with clarity and consistency.
 
@@ -24,22 +23,24 @@ This portfolio demonstrates how I structure technical documentation, explain API
 
 ## 📁 Projects
 
-### 1️⃣ MkDocs Beginner Guide  
+### 1️⃣ MkDocs Beginner Guide
+
 A step-by-step guide for beginners on how to create and publish documentation websites using MkDocs.
 
-- 📂 Folder: `mkdocs-guide`  
-- 📄 Contents: `index.md`, `mkdocs.yml`, and sample topic pages  
-- 🛠️ Topics covered: Installation, configuration, navigation, and local deployment  
+- **Folder:** `mkdocs-guide`  
+- **Contents:** `index.md`, `mkdocs.yml`, and sample topic pages  
+- **Topics covered:** Installation, configuration, navigation, and local deployment  
 
-🔗 **Live site**: [Click here to visit the documentation](https://bahrululum7.github.io/technical-writing-portfolio/)
+🔗 [Click here to view the live documentation](https://bahrululum7.github.io/technical-writing-portfolio/)
 
 ---
 
-### 2️⃣ REST API Documentation Sample  
+### 2️⃣ REST API Documentation Sample
+
 Professional-style documentation for a fictional REST API called **TaskTrack**, based on testing via Postman and Reqres API.
 
-- 📂 Folder: `api-docs`  
-- 📄 Contents:
+- **Folder:** `api-docs`  
+- **Contents:**
   - [`users.md`](./api-docs/users.md) – Get all users  
   - [`create-user.md`](./api-docs/create-user.md) – Create new user  
   - [`update-user.md`](./api-docs/update-user.md) – Update user by ID  
@@ -47,18 +48,17 @@ Professional-style documentation for a fictional REST API called **TaskTrack**, 
   - [`products.md`](./api-docs/products.md) – View product list  
   - [`create-product.md`](./api-docs/create-product.md) – Add a new product  
   - [`login.md`](./api-docs/login.md) – Authenticate user login  
-  - [`glossary.md`](./api-docs/glossary.md) – Common API and docs terms
+  - [`glossary.md`](./api-docs/glossary.md) – Common API and docs terms  
 
-- 🧭 Topics: REST methods (GET, POST, PUT, DELETE), request/response structures, status codes, headers, tokens
+- **Topics covered:** REST methods (GET, POST, PUT, DELETE), request/response structures, status codes, headers, tokens
 
 ---
 
 ## 🌐 Contact
 
-- 📧 Email: **bahrul070302@gmail.com**  
+- 📧 Email: [bahrul070302@gmail.com](mailto:bahrul070302@gmail.com)  
 - 🐙 GitHub: [github.com/bahrululum7](https://github.com/bahrululum7)
 
 ---
 
 > _This portfolio is actively maintained and updated as I continue to grow as a Technical Writer._
-```
