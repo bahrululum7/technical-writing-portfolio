@@ -1,36 +1,43 @@
-# Users API
-
-## POST /api/users
+# Create User
 
 Create a new user in the system.
 
 ---
 
-### 🔹 HTTP Method & Endpoint
+## Endpoint
 
-```
-POST /api/users
-```
-
-### 🔹 Request Body
-
-Send JSON payload in the request body.
-
-| Field   | Type   | Required | Description         |
-|---------|--------|----------|---------------------|
-| name    | string | Yes      | Full name of user   |
-| email   | string | Yes      | Email address       |
-| password| string | Yes      | Plain-text password |
+**POST** `/api/users`
 
 ---
 
-### 🔹 Example Request
+## Headers
+
+| Key            | Value                     |
+|----------------|---------------------------|
+| Content-Type   | application/json          |
+| Authorization  | Bearer YOUR_API_KEY       |
+
+---
+
+## Request Body
+
+Send a JSON payload in the request body:
+
+| Field    | Type   | Required | Description             |
+|----------|--------|----------|-------------------------|
+| name     | string | Yes      | Full name of the user   |
+| email    | string | Yes      | Email address (unique)  |
+| password | string | Yes      | Plain-text password     |
+
+---
+
+## Example Request
 
 ```http
-POST /api/users HTTP/1.1  
-Host: api.tasktrack.com  
-Content-Type: application/json  
-Authorization: Bearer YOUR_API_KEY
+POST /api/users HTTP/1.1
+Host: api.tasktrack.com
+Content-Type: application/json
+Authorization: Bearer QpwL5tke4Pnpja7X4
 
 {
   "name": "Alice Walker",
@@ -41,9 +48,15 @@ Authorization: Bearer YOUR_API_KEY
 
 ---
 
-### 🔹 Response
+## Success Response (201 Created)
 
-**Status:** `201 Created`
+**Headers:**
+
+```http
+Location: /api/users/101
+```
+
+**Body:**
 
 ```json
 {
@@ -56,8 +69,20 @@ Authorization: Bearer YOUR_API_KEY
 
 ---
 
-### 📘 Notes
+## Error Response (400 Bad Request)
+
+```json
+{
+  "error": "Email already exists"
+}
+```
+
+---
+
+## Notes
 
 - All fields are required.
 - Email must be unique.
-- Password will be securely hashed by the server.
+- Password will be securely hashed on the server.
+- A `Location` header will be included in the response pointing to the newly created resource.
+```
