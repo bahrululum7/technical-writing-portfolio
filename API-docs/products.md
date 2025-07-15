@@ -1,31 +1,36 @@
-## PUT /api/products/{id}
+# Update Product
 
 Updates the details of an existing product based on its unique identifier.
 
 ---
 
-### Request
+## Endpoint
 
-- **Method:** `PUT`  
-- **URL:** `https://api.example.com/products/{id}`
+**PUT** `/api/products/{id}`
 
-#### Headers
-
-| Header           | Value                    | Required |
-|------------------|--------------------------|----------|
-| `x-api-key`      | `reqres-free-v1`         | ✅        |
-| `Authorization`  | `Bearer {access_token}`  | ✅        |
-| `Content-Type`   | `application/json`       | ✅        |
-
-#### Path Parameters
-
-| Parameter | Type   | Required | Description                             |
-|-----------|--------|----------|-----------------------------------------|
-| `id`      | string | ✅        | Unique identifier of the product to update |
+- `{id}` is the unique product identifier.
 
 ---
 
-### Request Body
+## Headers
+
+| Key            | Value                    |
+|----------------|--------------------------|
+| Authorization  | Bearer {access_token}    |
+| x-api-key      | reqres-free-v1           |
+| Content-Type   | application/json         |
+
+---
+
+## Path Parameters
+
+| Parameter | Type   | Required | Description                          |
+|-----------|--------|----------|--------------------------------------|
+| id        | string | Yes      | ID of the product to update          |
+
+---
+
+## Request Body
 
 ```json
 {
@@ -41,25 +46,23 @@ Updates the details of an existing product based on its unique identifier.
 }
 ```
 
-#### Request Body Fields
+### Request Body Fields
 
 | Field        | Type    | Required | Description                             |
 |--------------|---------|----------|-----------------------------------------|
-| name         | string  | ✅        | Product name                            |
-| price        | number  | ✅        | Price in local currency (e.g., IDR)     |
-| in_stock     | boolean | ✅        | Product availability status             |
-| categories   | array   | ✅        | List of product categories              |
-| description  | string  | ❌        | Full product description                |
-| discount     | number  | ❌        | Discount percentage                     |
-| weight_gram  | number  | ❌        | Product weight in grams                 |
-| tags         | array   | ❌        | Searchable product tags                 |
-| is_active    | boolean | ✅        | Whether the product is currently active |
+| name         | string  | Yes      | Product name                            |
+| price        | number  | Yes      | Price in local currency (e.g., IDR)     |
+| in_stock     | boolean | Yes      | Product availability status             |
+| categories   | array   | Yes      | List of product categories              |
+| description  | string  | No       | Full product description                |
+| discount     | number  | No       | Discount percentage                     |
+| weight_gram  | number  | No       | Product weight in grams                 |
+| tags         | array   | No       | Searchable product tags                 |
+| is_active    | boolean | Yes      | Whether the product is currently active |
 
 ---
 
-### Response
-
-- **Status:** `200 OK`
+## Success Response (200 OK)
 
 ```json
 {
@@ -70,12 +73,32 @@ Updates the details of an existing product based on its unique identifier.
 
 | Field       | Type   | Description                       |
 |-------------|--------|-----------------------------------|
-| `id`        | string | ID of the updated product         |
-| `updatedAt` | string | ISO timestamp of the update       |
+| id          | string | ID of the updated product         |
+| updatedAt   | string | ISO timestamp of the update       |
 
 ---
 
-### Example HTTP Request
+## Error Responses
+
+### 400 Bad Request
+
+```json
+{
+  "error": "Invalid product data"
+}
+```
+
+### 404 Not Found
+
+```json
+{
+  "error": "Product not found"
+}
+```
+
+---
+
+## Example HTTP Request
 
 ```http
 PUT /api/products/p-904 HTTP/1.1
@@ -99,8 +122,9 @@ Content-Type: application/json
 
 ---
 
-### Notes
+## Notes
 
-- Fields such as `description`, `discount`, `weight_gram`, and `tags` are optional.
-- The product must have a unique `id` that exists in the system; otherwise, a `404 Not Found` may be returned.
-- This endpoint is restricted to authenticated users with admin-level privileges.
+- Optional fields include `description`, `discount`, `weight_gram`, and `tags`.
+- A valid product ID must exist; otherwise, a `404 Not Found` will be returned.
+- This endpoint requires authentication with admin-level privileges.
+```
