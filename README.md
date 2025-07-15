@@ -42,6 +42,8 @@ Reference-style documentation for a fictional REST API called **TaskTrack**.
   - [`users.md`](./api-docs/users.md) → Get all users  
   - [`create-user.md`](./api-docs/create-user.md) → Create new user  
   - [`update-user.md`](./api-docs/update-user.md) → Update existing user
+  - [`delete-user.md`](./api-docs/delete-user.md) → Delete user by ID
+
 
 - 🧭 Topics: Endpoint usage, request/response examples, authentication
 
