@@ -1,11 +1,14 @@
-```markdown
 # User Login
 
-Authenticates a user and returns a login token.
+Authenticates a user and returns an access token.
+
+---
 
 ## Endpoint
 
 **POST** `/api/login`
+
+---
 
 ## Headers
 
@@ -13,6 +16,8 @@ Authenticates a user and returns a login token.
 |---------------|--------------------|
 | Content-Type  | application/json   |
 | x-api-key     | reqres-free-v1     |
+
+---
 
 ## Request Body
 
@@ -23,6 +28,8 @@ Authenticates a user and returns a login token.
 }
 ```
 
+---
+
 ## Success Response (200 OK)
 
 ```json
@@ -31,28 +38,52 @@ Authenticates a user and returns a login token.
 }
 ```
 
+---
+
 ## Error Responses
 
-| Status Code | Description                     |
-|-------------|---------------------------------|
-| 400         | Missing email or password       |
-| 401         | Invalid credentials             |
-| 500         | Internal server error           |
+### 400 Bad Request
+
+```json
+{
+  "error": "Missing email or password"
+}
+```
+
+### 401 Unauthorized
+
+```json
+{
+  "error": "Invalid credentials"
+}
+```
+
+### 500 Internal Server Error
+
+```json
+{
+  "error": "Unexpected server error"
+}
+```
+
+---
 
 ## Notes
 
-- Email and password are required fields.
-- The token is used for accessing protected endpoints (if any).
-- No token is returned if credentials are invalid.
+- Both `email` and `password` fields are required.
+- The returned `token` is used to authenticate protected endpoints.
+- No token will be returned if the login credentials are incorrect.
+
+---
 
 ## Example in Postman
 
-1. Method: **POST**
-2. URL: `https://reqres.in/api/login`
-3. Headers:
+1. **Method:** POST  
+2. **URL:** `https://reqres.in/api/login`  
+3. **Headers:**
    - `Content-Type`: `application/json`
-   - `x-api-key`: `reqres-free-v1`
-4. Body (raw, JSON):
+   - `x-api-key`: `reqres-free-v1`  
+4. **Body (raw, JSON):**
 
 ```json
 {
