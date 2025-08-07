@@ -41,14 +41,14 @@ Professional-style documentation for a fictional REST API called **TaskTrack**, 
 
 - **Folder:** `api-docs`  
 - **Contents:**
-  - [`users.md`](./api-docs/users.md) – Get all users  
-  - [`create-user.md`](./api-docs/create-user.md) – Create new user  
-  - [`update-user.md`](./api-docs/update-user.md) – Update user by ID  
-  - [`delete-user.md`](./api-docs/delete-user.md) – Delete user  
-  - [`products.md`](./api-docs/products.md) – View product list  
-  - [`create-product.md`](./api-docs/create-product.md) – Add a new product  
-  - [`login.md`](./api-docs/login.md) – Authenticate user login  
-  - [`glossary.md`](./api-docs/glossary.md) – Common API and docs terms  
+  - [`users.md`](./API-docs/users.md) – Get all users  
+  - [`create-user.md`](./API-docs/create-user.md) – Create new user  
+  - [`update-user.md`](./API-docs/update-user.md) – Update user by ID  
+  - [`delete-user.md`](./API-docs/delete-user.md) – Delete user  
+  - [`products.md`](./API-docs/products.md) – View product list  
+  - [`create-product.md`](./API-docs/create-product.md) – Add a new product  
+  - [`login.md`](./API-docs/login.md) – Authenticate user login  
+  - [`glossary.md`](./API-docs/glossary.md) – Common API and docs terms  
 
 - **Topics covered:** REST methods (GET, POST, PUT, DELETE), request/response structures, status codes, headers, tokens
 
